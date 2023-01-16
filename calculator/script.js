@@ -58,7 +58,7 @@ function handleMath(symbol){
         flushOperation(intBuffer);
     }
     previousOperator = symbol;
-    buffer = '0'
+    buffer = '0';
 }
 
 function flushOperation(intBuffer){
@@ -83,7 +83,7 @@ function handleNumber(numberString){
 
 function init(){
     document.querySelector('.calc-buttons').addEventListener('click', function(event){
-        buttonClick(event.target.innetText);
+        buttonClick(event.target.innerText);
     })
 }
 
